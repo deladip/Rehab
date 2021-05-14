@@ -1,0 +1,109 @@
+{% extends 'total/index.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/css/main.css' %}">
+
+{% block content %}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+  #tlogo, #video {
+  filter: brightness(50%);   
+}
+.display-1, .h1{
+    font-family: 'Niconne', cursive;
+}
+#pt,#ot,#sp{
+  font-size: 60px;
+  color: aquamarine;
+}
+
+.qwik{
+  font-size: 28px;
+  padding: 0 auto;
+  font-style: inherit;
+  color: floralwhite;
+}
+</style>
+
+<div class="card bg-dark text-white">
+  <img src="/static/images/tlogo.jpg" id="tlogo" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="display-1 text-center text-white" class="align-text-center" class="card-title" class="card-title  ">Welcome</h5>
+    <div class="card-footer">
+    <p class="h1 text-center" class="card-text">Our goal is to restore you back to your highest level of functioning through Rehabilitation therapy.</p>
+      </div>
+  </div>
+</div>
+
+<section>
+  <div class="card text-center text-white">
+    <video class="card-img" loop muted autoplay poster="img/videofram.jpg" class="fullscreen-bg_video" id="video" src="{% static '/videos/video.webm' %}" type="{% static 'video.webm' %}" ></video>    
+      <div class="card-img-overlay" class="d-flex justify-content-center">
+        <hr>        
+          <p class="h1" id="pt">Phyiscal Therapy</p>
+          <br>
+          <p class="qwik">is designed to relieve pain and enhance health.</p>
+          <hr>
+          <p class="h1" id="ot">Occupational Therapy</p>
+          <br>
+          <p class="qwik">strives to equip patients with the necessary skills—and often, 
+            customized tools—for proper self-care, such as dressing, personal hygiene, and cooking.</p>
+            <hr>
+          <p class="h1" id="sp">Speech Therapy</p>
+          <br>
+          <p class="qwik"> assists residents in achieving improved quality of life through assessment of language, swallowing, and/or cognitive disorders.</p>        
+      </div>    
+  </div>
+</section>
+
+<section>
+<div class="card text-center">  
+  <div class="card-body bg-dark">
+    <h5 class="card-title text-white">WHAT WE DO</h5>
+    <p class="card-text">Our services are design to meet the needs of every individual.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>  
+</div>
+</section>
+<section>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="{% static '/images/PT255393.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Rehabilitation Therapy</h5>
+        <p class="card-text text-dark">Rehabilitation therapy services aim to restore patients to their
+           highest level of functioning.Our program is designed to promote rehabilitation in a high-quality and compassionate environment.</p>
+        <a href="#" class="btn btn-primary btn-center">Find out More</a>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static '/images/OT255170.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Home Services</h5>
+        <p class="card-text text-dark">We cater to your lifestyle through personalized care that includes flexible scheduling,
+           reliable and experienced staff, and services individualized to your needs. We are dedicated to establishing a trusting relationship with you and your family.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static '/images/SLP255170.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Other Care Options</h5>
+        <p class="card-text text-dark">We cater to your lifestyle through personalized care that includes flexible scheduling, reliable and experienced staff, and services individualized to your needs. We are dedicated to establishing a trusting relationship with you and your family.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+    
+{% endblock %}
+
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="{% static '/js/jquery.js' %}"></script>
+<script src="{% static '/js/main.js' %}"></script>-->

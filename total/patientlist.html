@@ -1,0 +1,36 @@
+{% extends 'total/staffnav.html' %}
+
+
+{% block content %}
+
+<br>
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <h5>Patients</h5>
+        </div>
+        <div class="card card-body">
+            <table class="table">
+                <tr>
+                    <th>Patients</th>
+                    <th>Zip code</th>
+                    <th>Category</th>
+                    <th>Orders</th>
+                    <th>Facility</th>
+                </tr>
+                {% for i in patients %}
+                <tr>
+                    <td>{{i.name}}</td>
+                    <td>{{i.zipCode}}</td>
+                    <td>{{i.refer}}</td>
+                    <td>{{i.setting}}</td>
+                    <td>{{i.facility}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
